@@ -524,10 +524,4 @@ closeButton.addEventListener("click", () => {
 
 
 
-// quiz btn
-// document.getElementById("quizbtntap").addEventListener("click", function() {
-//   document.getElementById("formtap").style.display = "block";
-//   document.getElementById("requiz").style.display = "none";
-// });
-
 

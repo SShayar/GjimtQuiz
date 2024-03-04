@@ -1,530 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>GJIMT</title>
-    <!-- meta tags -->
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
 
-  <body>
-    <header>
-      <div class="logo-box">
-        <img src="logo.png" alt="Logo" class="logo-image" />
-      </div>
-      <canvas id="drawing_canvas" style="z-index: 100"></canvas>
-      <div class="greet-box">
-        <div class="greet-img">
-          <h1>-Celebrating-</h1>
-          <h1>-25 YEARS of-</h1>
-          <h1>-EXCELLENCE</h1>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="ppt_container">
-        <iframe
-          src="https://onedrive.live.com/embed?resid=233C22D7614ECE6%219613&amp;authkey=!AK6shoUf5pTz8sY&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          >This is an embedded
-          <a target="_blank" href="https://office.com">Microsoft Office</a>
-          presentation, powered by
-          <a target="_blank" href="https://office.com/webapps">Office</a
-          >.</iframe
-        >
-      </div>
-    </main>
-    <footer>
-      <!--Slider-->
-      <div id="slider">
-        <div class="slide" style="background: dodgerBlue">
-          <video autoplay muted loop style="object-fit: cover">
-            <source src="day.mp4" type="video/mp4" />
-          </video>
-        </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>GJIMT</title>
+  <!-- meta tags -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-        <div class="slide" style="background: coral">
-          <video autoplay muted loop style="object-fit: cover">
-            <source src="cut1.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <!-- <div class="slide" style="background:crimson;">
-        <video autoplay muted loop  style="object-fit: cover;" >
-            <source src="day.mp4"  type="video/mp4">
-          </video>
+<body>
+  <header>
+    <div class="logo-box">
+      <img src="logo.png" alt="Logo" class="logo-image" />
     </div>
-    
-    <div class="slide" style="background: #6edf10;">
-        <video autoplay muted loop  style="object-fit: cover;" >
-            <source src="cut1.mp4"  type="video/mp4">
-          </video>
-    </div> -->
-
-        <!--Controlling arrows-->
-        <span class="controls" onclick="prevSlide(-1)" id="left-arrow"
-          ><i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </span>
-        <span class="controls" id="right-arrow" onclick="nextSlide(1)"
-          ><i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </span>
+    <canvas id="drawing_canvas" style="z-index: 100"></canvas>
+    <div class="greet-box">
+      <div class="greet-img">
+        <h1>-Celebrating-</h1>
+        <h1>-25 YEARS of-</h1>
+        <h1>-EXCELLENCE</h1>
       </div>
-      <div id="dots-con">
-        <span class="dot"></span>
-        <span class="dot"></span>
+    </div>
+  </header>
+  <main>
+    <div class="ppt_container">
+      <iframe
+        src="https://1drv.ms/p/c/64aa92993036fabe/IQNfZPah9IutR42BeWtOUtmCAa_tNhQSFSC7ae3DDiK8R9g?wdAr=1.7777777777777777"
+        width="100%" height="100%" frameborder="0">This is an embedded <a target="_blank"
+          href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+          href="https://office.com/webapps">Office</a>.</iframe>
+    </div>
+  </main>
+  <footer>
+    <!--Slider-->
+    <div id="slider">
+      <div class="slide" style="background: dodgerBlue">
+        <video autoplay muted loop style="object-fit: cover">
+          <source src="day.mp4" type="video/mp4" />
+        </video>
       </div>
-      
-      <div id ="quizbtntap" class="word">
-        <div id ="requiz"><p>click Me</p></div>
-        <span>Q</span>
-        <span>U</span>
-        <span>I</span>
-        <span>Z</span>
-        <span>!</span>
+
+      <div class="slide" style="background: coral">
+        <video autoplay muted loop style="object-fit: cover">
+          <source src="cut1.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="fromouter" id = "formtap"  style="display: none;" >
-        <div class="form-box"  >
-          <div class="question">
-            <label for="checkBox1">1.&nbsp; I like to work on cars</label>
-            <input type="checkbox" id="checkBox1" name="hobbies[]" value="1" />
-          </div>
-          <div class="question">
-            <label for="checkBox2">2.&nbsp; I like to do puzzles</label>
-            <input type="checkbox" id="checkBox2" name="hobbies[]" value="2" />
-          </div>
-          <div class="question">
-            <label for="checkBox3"
-              >3.&nbsp; I am good at working independently</label
-            >
-            <input type="checkbox" id="checkBox3" name="hobbies[]" value="3" />
-          </div>
-          <div class="question">
-            <label for="checkBox4">4.&nbsp; I like to work in teams</label>
-            <input type="checkbox" id="checkBox4" name="hobbies[]" value="4" />
-          </div>
-          <div class="question">
-            <label for="checkBox5"
-              >5.&nbsp; I am an ambitious person, I set goals for myself</label
-            >
-            <input type="checkbox" id="checkBox5" name="hobbies[]" value="5" />
-          </div>
-          <div class="question">
-            <label for="checkBox6"
-              >6.&nbsp; I like to organise things, (files, desks/offices)</label
-            >
-            <input type="checkbox" id="checkBox6" name="hobbies[]" value="6" />
-          </div>
-          <div class="question">
-            <label for="checkBox7">7.&nbsp; I like to build things</label>
-            <input type="checkbox" id="checkBox7" name="hobbies[]" value="7" />
-          </div>
-          <div class="question">
-            <label for="checkBox8"
-              >8.&nbsp; I like to read about art and music</label
-            >
-            <input type="checkbox" id="checkBox8" name="hobbies[]" value="8" />
-          </div>
-          <div class="question">
-            <label for="checkBox9"
-              >9.&nbsp; I like to have clear instructions to follow</label
-            >
-            <input type="checkbox" id="checkBox9" name="hobbies[]" value="9" />
-          </div>
-          <div class="question">
-            <label for="checkBox10"
-              >10.&nbsp; I like to try to influence or persuade people</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox10"
-              name="hobbies[]"
-              value="10"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox11">11.&nbsp; I like to do experiments</label>
-            <input
-              type="checkbox"
-              id="checkBox11"
-              name="hobbies[]"
-              value="11"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox12"
-              >12.&nbsp; I like to teach or train people</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox12"
-              name="hobbies[]"
-              value="12"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox13"
-              >13.&nbsp; I like trying to help people solve their
-              problems</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox13"
-              name="hobbies[]"
-              value="13"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox14"
-              >14.&nbsp; I like to take care of animals</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox14"
-              name="hobbies[]"
-              value="14"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox15"
-              >15.&nbsp; I wouln't mind working 8 hours per day in office</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox15"
-              name="hobbies[]"
-              value="15"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox16">16.&nbsp; I like selling things</label>
-            <input
-              type="checkbox"
-              id="checkBox16"
-              name="hobbies[]"
-              value="16"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox17">17.&nbsp; I enjoy creative writing</label>
-            <input
-              type="checkbox"
-              id="checkBox17"
-              name="hobbies[]"
-              value="17"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox18">18.&nbsp; I enjoy science</label>
-            <input
-              type="checkbox"
-              id="checkBox18"
-              name="hobbies[]"
-              value="18"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox19"
-              >19.&nbsp; I am quick to take on new responsibilities</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox19"
-              name="hobbies[]"
-              value="19"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox20"
-              >20.&nbsp; I am interested in helping people</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox20"
-              name="hobbies[]"
-              value="20"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox21"
-              >21.&nbsp; I enjoy trying to figure out how things work</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox21"
-              name="hobbies[]"
-              value="21"
-            />
-          </div>
 
-          <div class="question">
-            <label for="checkBox22"
-              >22.&nbsp; I like putting things together or assembling
-              things</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox22"
-              name="hobbies[]"
-              value="22"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox23">23.&nbsp; I am a creative person</label>
-            <input
-              type="checkbox"
-              id="checkBox23"
-              name="hobbies[]"
-              value="23"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox24">24.&nbsp; I pay attention to details</label>
-            <input
-              type="checkbox"
-              id="checkBox24"
-              name="hobbies[]"
-              value="24"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox25"
-              >25.&nbsp; I like to do filing or typing</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox25"
-              name="hobbies[]"
-              value="25"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox26"
-              >26.&nbsp; I like to analyse things (problems/ situations)</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox26"
-              name="hobbies[]"
-              value="26"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox27"
-              >27.&nbsp; I like to play instruments or sing</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox27"
-              name="hobbies[]"
-              value="27"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox28"
-              >28.&nbsp; I enjoy learning about other cultures</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox28"
-              name="hobbies[]"
-              value="28"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox29"
-              >29.&nbsp; I would like to start my own business</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox29"
-              name="hobbies[]"
-              value="29"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox30">30.&nbsp; I like to cook</label>
-            <input
-              type="checkbox"
-              id="checkBox30"
-              name="hobbies[]"
-              value="30"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox31">31.&nbsp; I like acting in plays</label>
-            <input
-              type="checkbox"
-              id="checkBox31"
-              name="hobbies[]"
-              value="31"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox32">32.&nbsp; I am a practical person</label>
-            <input
-              type="checkbox"
-              id="checkBox32"
-              name="hobbies[]"
-              value="32"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox33"
-              >33.&nbsp; I like working with numbers or charts</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox33"
-              name="hobbies[]"
-              value="33"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox34"
-              >34.&nbsp; I like to get into discussions about issues</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox34"
-              name="hobbies[]"
-              value="34"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox35"
-              >35.&nbsp; I am good at keeping records of my work</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox35"
-              name="hobbies[]"
-              value="35"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox36">36.&nbsp; I like to lead</label>
-            <input
-              type="checkbox"
-              id="checkBox36"
-              name="hobbies[]"
-              value="36"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox37">37.&nbsp; I like working outdoors</label>
-            <input
-              type="checkbox"
-              id="checkBox37"
-              name="hobbies[]"
-              value="37"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox38"
-              >38.&nbsp; I would like to work in an office</label
-            >
-            <input
-              type="checkbox"
-              id="checkBox38"
-              name="hobbies[]"
-              value="38"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox39">39.&nbsp; I am good at maths</label>
-            <input
-              type="checkbox"
-              id="checkBox39"
-              name="hobbies[]"
-              value="39"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox40">40.&nbsp; I like helping people</label>
-            <input
-              type="checkbox"
-              id="checkBox40"
-              name="hobbies[]"
-              value="40"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox41">41.&nbsp; I like to draw</label>
-            <input
-              type="checkbox"
-              id="checkBox41"
-              name="hobbies[]"
-              value="41"
-            />
-          </div>
-          <div class="question">
-            <label for="checkBox42">42.&nbsp; I like to give speeches</label>
-            <input
-              type="checkbox"
-              id="checkBox42"
-              name="hobbies[]"
-              value="42"
-            />
-          </div>
 
-          <div class="btns">
-            <div class="section">
-              <button id="subbtn" type="button">
-                <p id="subbtnText">SUBMIT</p>
-                <div class="checked">
-                  <i class="fa-regular fa-face-smile-wink"></i>
-                </div>
-              </button>
-            </div>
-            <div class="section">
-              <button id="resbtn" type="reset">
-                <p id="resbtnText">RESET</p>
-                <div class="checked">
-                  <i class="fa-solid fa-delete-left"></i>
-                </div>
-              </button>
-            </div>
-          </div>
+      <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </span>
+      <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
+          aria-hidden="true"></i>
+      </span>
+    </div>
+    <div id="dots-con">
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
 
-        <!-- <div id="btns">
-        <button type="button" id="heroBtn" class="btn">Submit</button>
-        <button type="reset" id="resetBtn" class="btn">Reset</button>
-    </div> -->
-        
-        <!-- <div id="popup" class="popup">
-          <div style="z-index: 1000" class="popup-content">
-            <span class="close-button">&times;</span>
-            <h2 id="generalization"></h2>
-            <h2 id="courses"></h2>
+    <div id="quizbtntap" class="word">
+      <div id="requiz">
+        <p>click Me</p>
+      </div>
+      <span>Q</span>
+      <span>U</span>
+      <span>I</span>
+      <span>Z</span>
+      <span>!</span>
+    </div>
+    <div class="fromouter" id="formtap" style="display: none;">
+      <div class="form-box">
+        <div class="question">
+          <label for="checkBox1">1.&nbsp; I like to work on cars</label>
+          <input type="checkbox" id="checkBox1" name="hobbies[]" value="1" />
+        </div>
+        <div class="question">
+          <label for="checkBox2">2.&nbsp; I like to do puzzles</label>
+          <input type="checkbox" id="checkBox2" name="hobbies[]" value="2" />
+        </div>
+        <div class="question">
+          <label for="checkBox3">3.&nbsp; I am good at working independently</label>
+          <input type="checkbox" id="checkBox3" name="hobbies[]" value="3" />
+        </div>
+        <div class="question">
+          <label for="checkBox4">4.&nbsp; I like to work in teams</label>
+          <input type="checkbox" id="checkBox4" name="hobbies[]" value="4" />
+        </div>
+        <div class="question">
+          <label for="checkBox5">5.&nbsp; I am an ambitious person, I set goals for myself</label>
+          <input type="checkbox" id="checkBox5" name="hobbies[]" value="5" />
+        </div>
+        <div class="question">
+          <label for="checkBox6">6.&nbsp; I like to organise things, (files, desks/offices)</label>
+          <input type="checkbox" id="checkBox6" name="hobbies[]" value="6" />
+        </div>
+        <div class="question">
+          <label for="checkBox7">7.&nbsp; I like to build things</label>
+          <input type="checkbox" id="checkBox7" name="hobbies[]" value="7" />
+        </div>
+        <div class="question">
+          <label for="checkBox8">8.&nbsp; I like to read about art and music</label>
+          <input type="checkbox" id="checkBox8" name="hobbies[]" value="8" />
+        </div>
+        <div class="question">
+          <label for="checkBox9">9.&nbsp; I like to have clear instructions to follow</label>
+          <input type="checkbox" id="checkBox9" name="hobbies[]" value="9" />
+        </div>
+        <div class="question">
+          <label for="checkBox10">10.&nbsp; I like to try to influence or persuade people</label>
+          <input type="checkbox" id="checkBox10" name="hobbies[]" value="10" />
+        </div>
+        <div class="question">
+          <label for="checkBox11">11.&nbsp; I like to do experiments</label>
+          <input type="checkbox" id="checkBox11" name="hobbies[]" value="11" />
+        </div>
+        <div class="question">
+          <label for="checkBox12">12.&nbsp; I like to teach or train people</label>
+          <input type="checkbox" id="checkBox12" name="hobbies[]" value="12" />
+        </div>
+        <div class="question">
+          <label for="checkBox13">13.&nbsp; I like trying to help people solve their
+            problems</label>
+          <input type="checkbox" id="checkBox13" name="hobbies[]" value="13" />
+        </div>
+        <div class="question">
+          <label for="checkBox14">14.&nbsp; I like to take care of animals</label>
+          <input type="checkbox" id="checkBox14" name="hobbies[]" value="14" />
+        </div>
+        <div class="question">
+          <label for="checkBox15">15.&nbsp; I wouln't mind working 8 hours per day in office</label>
+          <input type="checkbox" id="checkBox15" name="hobbies[]" value="15" />
+        </div>
+        <div class="question">
+          <label for="checkBox16">16.&nbsp; I like selling things</label>
+          <input type="checkbox" id="checkBox16" name="hobbies[]" value="16" />
+        </div>
+        <div class="question">
+          <label for="checkBox17">17.&nbsp; I enjoy creative writing</label>
+          <input type="checkbox" id="checkBox17" name="hobbies[]" value="17" />
+        </div>
+        <div class="question">
+          <label for="checkBox18">18.&nbsp; I enjoy science</label>
+          <input type="checkbox" id="checkBox18" name="hobbies[]" value="18" />
+        </div>
+        <div class="question">
+          <label for="checkBox19">19.&nbsp; I am quick to take on new responsibilities</label>
+          <input type="checkbox" id="checkBox19" name="hobbies[]" value="19" />
+        </div>
+        <div class="question">
+          <label for="checkBox20">20.&nbsp; I am interested in helping people</label>
+          <input type="checkbox" id="checkBox20" name="hobbies[]" value="20" />
+        </div>
+        <div class="question">
+          <label for="checkBox21">21.&nbsp; I enjoy trying to figure out how things work</label>
+          <input type="checkbox" id="checkBox21" name="hobbies[]" value="21" />
+        </div>
+
+        <div class="question">
+          <label for="checkBox22">22.&nbsp; I like putting things together or assembling
+            things</label>
+          <input type="checkbox" id="checkBox22" name="hobbies[]" value="22" />
+        </div>
+        <div class="question">
+          <label for="checkBox23">23.&nbsp; I am a creative person</label>
+          <input type="checkbox" id="checkBox23" name="hobbies[]" value="23" />
+        </div>
+        <div class="question">
+          <label for="checkBox24">24.&nbsp; I pay attention to details</label>
+          <input type="checkbox" id="checkBox24" name="hobbies[]" value="24" />
+        </div>
+        <div class="question">
+          <label for="checkBox25">25.&nbsp; I like to do filing or typing</label>
+          <input type="checkbox" id="checkBox25" name="hobbies[]" value="25" />
+        </div>
+        <div class="question">
+          <label for="checkBox26">26.&nbsp; I like to analyse things (problems/ situations)</label>
+          <input type="checkbox" id="checkBox26" name="hobbies[]" value="26" />
+        </div>
+        <div class="question">
+          <label for="checkBox27">27.&nbsp; I like to play instruments or sing</label>
+          <input type="checkbox" id="checkBox27" name="hobbies[]" value="27" />
+        </div>
+        <div class="question">
+          <label for="checkBox28">28.&nbsp; I enjoy learning about other cultures</label>
+          <input type="checkbox" id="checkBox28" name="hobbies[]" value="28" />
+        </div>
+        <div class="question">
+          <label for="checkBox29">29.&nbsp; I would like to start my own business</label>
+          <input type="checkbox" id="checkBox29" name="hobbies[]" value="29" />
+        </div>
+        <div class="question">
+          <label for="checkBox30">30.&nbsp; I like to cook</label>
+          <input type="checkbox" id="checkBox30" name="hobbies[]" value="30" />
+        </div>
+        <div class="question">
+          <label for="checkBox31">31.&nbsp; I like acting in plays</label>
+          <input type="checkbox" id="checkBox31" name="hobbies[]" value="31" />
+        </div>
+        <div class="question">
+          <label for="checkBox32">32.&nbsp; I am a practical person</label>
+          <input type="checkbox" id="checkBox32" name="hobbies[]" value="32" />
+        </div>
+        <div class="question">
+          <label for="checkBox33">33.&nbsp; I like working with numbers or charts</label>
+          <input type="checkbox" id="checkBox33" name="hobbies[]" value="33" />
+        </div>
+        <div class="question">
+          <label for="checkBox34">34.&nbsp; I like to get into discussions about issues</label>
+          <input type="checkbox" id="checkBox34" name="hobbies[]" value="34" />
+        </div>
+        <div class="question">
+          <label for="checkBox35">35.&nbsp; I am good at keeping records of my work</label>
+          <input type="checkbox" id="checkBox35" name="hobbies[]" value="35" />
+        </div>
+        <div class="question">
+          <label for="checkBox36">36.&nbsp; I like to lead</label>
+          <input type="checkbox" id="checkBox36" name="hobbies[]" value="36" />
+        </div>
+        <div class="question">
+          <label for="checkBox37">37.&nbsp; I like working outdoors</label>
+          <input type="checkbox" id="checkBox37" name="hobbies[]" value="37" />
+        </div>
+        <div class="question">
+          <label for="checkBox38">38.&nbsp; I would like to work in an office</label>
+          <input type="checkbox" id="checkBox38" name="hobbies[]" value="38" />
+        </div>
+        <div class="question">
+          <label for="checkBox39">39.&nbsp; I am good at maths</label>
+          <input type="checkbox" id="checkBox39" name="hobbies[]" value="39" />
+        </div>
+        <div class="question">
+          <label for="checkBox40">40.&nbsp; I like helping people</label>
+          <input type="checkbox" id="checkBox40" name="hobbies[]" value="40" />
+        </div>
+        <div class="question">
+          <label for="checkBox41">41.&nbsp; I like to draw</label>
+          <input type="checkbox" id="checkBox41" name="hobbies[]" value="41" />
+        </div>
+        <div class="question">
+          <label for="checkBox42">42.&nbsp; I like to give speeches</label>
+          <input type="checkbox" id="checkBox42" name="hobbies[]" value="42" />
+        </div>
+
+        <div class="btns">
+          <div class="section">
+            <button id="subbtn" type="button">
+              <p id="subbtnText">SUBMIT</p>
+              <div class="checked">
+                <i class="fa-regular fa-face-smile-wink"></i>
+              </div>
+            </button>
           </div>
-        </div> -->
-       
+          <div class="section">
+            <button id="resbtn" type="reset">
+              <p id="resbtnText">RESET</p>
+              <div class="checked">
+                <i class="fa-solid fa-delete-left"></i>
+              </div>
+            </button>
+          </div>
+        </div>
         <div id="popup-container" class="popup-container">
           <div id="popup" class="popup">
             <span class="close-button">&times;</span>
             <h2 id="generalization"></h2>
             <h2 id="courses"></h2>
           </div>
-        </div>  
+        </div>
       </div>
-    </footer>
-    
+  </footer>
+
   </div>
-  
-  </body>
-  <script src="script.js"></script>
+
+</body>
+<script src="script.js"></script>
+
 </html>

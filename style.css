@@ -477,11 +477,7 @@ video {
 .formouter .word:active {
   background-color: transparent;
 }
-/* btns */
-/* .btns{
-  width: 100vw;
-  height: 4rem;
-} */
+
 .btns{
   /* /* width: 100vw; */
   height: 10rem; 
@@ -489,14 +485,6 @@ video {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
-}
-.section {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background: #e3ebfe; */
 }
 button {
   position: relative;
