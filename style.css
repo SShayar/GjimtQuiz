@@ -1,6 +1,6 @@
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Montez&family=Sacramento&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Anta&family=Montez&family=Sacramento&display=swap");
 * {
   margin: 0;
@@ -232,24 +232,9 @@ main {
   align-items: center;
   justify-content: center;
 }
-.ppt_container {
-  height: 70vh;
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 767px) {
-  .greet-img {
-    height: 30vh;
-  }
-  .ppt_container {
-    height: 30vh;
-  }
-  #slider {
-    height: 30vh;
-  }
-}
+
+
+
 
 
 
@@ -655,8 +640,8 @@ button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2em;
 }
-
 .close-button {
+
   position: sticky; /* Make the close button sticky */
   top: 10%; /* Position the close button at the center of the pop-up div */
   right: 50%; /* Position the close button at the center of the pop-up div */
@@ -738,4 +723,150 @@ button {
   background: #bbb;
   /* opacity: 0.5; */
   margin: 3 3px;
+}
+
+.ppt_container {
+  height: 133vh;
+  width: 80vw;
+  
+  display: grid;
+  grid-template-columns: 40% 60%; /* Divide the space equally between two columns */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-img {
+  background-image: url("event.jpg");
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 1; /* Place the event-img in the first column */
+}
+
+.event-info {
+  display: grid;
+  grid-template-row: repeat(4, 1fr);
+  height: 100%;
+  box-sizing: border-box;
+  grid-column: 2; /* Place the event-info in the second column */
+}
+.box {
+  /* Make the inner divs take up the full width of the event-info container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.red {
+  background-color: #fc2631;
+  color: #F6DF3B;
+}
+
+.blue {
+  background-color: #4DCEEE;
+  color: #1F3359;
+}
+
+.yellow {
+  background-color: #FACC51;
+  color: #1F325B ;
+}
+
+.green {
+  background-color: #74CC9A;
+  color: #020400;
+}
+
+.time {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+  margin-bottom: 5px;
+  color: black;
+  position: relative;
+  left: 2%;
+  /* font-size: 2em; */
+  font-size: 0.5em;
+}
+
+.info {
+  /* color: #fff; */
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 3em; */
+}
+@media (min-width: 767px) {
+  .time {
+     font-size: 2em; 
+  }
+  .info {
+    
+    font-size: 3em;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767px) {
+  .greet-img {
+    height: 30vh;
+  }
+  .ppt_container {
+    height: 36vh;
+  }
+  
+  #slider {
+    height: 30vh;
+  }
+}
+.btn-shine {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* padding: 12px 48px; */
+  /* color: #ffffff; */
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  /* background-position: 0; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  /* font-weight: 600; */
+  /* font-size: 16px; */
+  /* text-decoration: none;
+  white-space: nowrap; */
+}
+
+@keyframes shine {
+  0%{
+    background-position: 100px;
+  }
+  20%{
+    background-position: 100px;
+  }
+  20%,40% {
+    background-position: 200px;
+  }
+  40%,60% {
+    background-position: 300px;
+  }
+  60%,80% {
+    background-position: 400px;
+  }
+  80%,100% {
+    background-position: 500px;
+  }
 }
