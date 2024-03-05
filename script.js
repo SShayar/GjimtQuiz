@@ -285,7 +285,7 @@ function cubeBezier(p0, c0, c1, p1, t) {
 
   return p;
 }
-
+//slide
 var slides = document.querySelectorAll(".slide");
 var dots = document.querySelectorAll(".dot");
 var index = 0;
@@ -317,6 +317,7 @@ function changeSlide() {
   slides[index].style.display = "block";
   dots[index].classList.add("active");
 }
+
 
 // quiz aimnation
 let isAnimationAllowed = true;
