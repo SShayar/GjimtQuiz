@@ -790,8 +790,9 @@ button {
   color: black;
   position: relative;
   left: 2%;
-  font-size: 6em;
+  font-size: 8em;
   font-size: 0.5em;
+  font-weight: 600;
 }
 
 .info {
