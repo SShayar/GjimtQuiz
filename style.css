@@ -739,7 +739,7 @@ button {
   width: 100%;
   height: auto;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   grid-column: 1; /* Place the event-img in the first column */
 }
