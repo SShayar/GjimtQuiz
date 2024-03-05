@@ -292,7 +292,6 @@ var index = 0;
 
 function prevSlide(n) {
   index += n;
-  console.log("prevSlide is called");
   changeSlide();
 }
 
@@ -301,8 +300,6 @@ function nextSlide(n) {
   changeSlide();
 }
 
-changeSlide();
-
 function changeSlide() {
   if (index > slides.length - 1) index = 0;
 
@@ -310,13 +307,18 @@ function changeSlide() {
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-
     dots[i].classList.remove("active");
   }
 
   slides[index].style.display = "block";
   dots[index].classList.add("active");
 }
+
+// setInterval for automatic slide change
+setInterval(function () {
+  nextSlide(1);
+}, 3000);
+
 
 
 // quiz aimnation
@@ -522,6 +524,7 @@ closeButton.addEventListener("click", () => {
   const popupContainer = document.getElementById("popup-container");
   popupContainer.style.visibility = "hidden";
 });
+
 
 
 
