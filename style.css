@@ -793,7 +793,7 @@ button {
   color: black;
   position: relative;
   left: 2%;
-  font-size: 2em;
+  font-size: 10em;
   font-size: 0.5em;
   font-weight: 600;
 }
@@ -809,7 +809,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 @media (min-width: 767px) {
   .time {
