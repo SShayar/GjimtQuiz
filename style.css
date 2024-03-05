@@ -7,6 +7,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Anta", sans-serif;
+}
+html,body{
    background-color: white;
 }
 
