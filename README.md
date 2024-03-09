@@ -43,4 +43,4 @@ We welcome contributions from the community! To contribute, follow these steps:
 &nbsp;
 For any questions or concerns, please contact the project maintainers at [krishanmurari.gjimt@gmail.com](mailto:krishanmurari.gjimt@gmail.com).
 
-Happy quizzing! 🎉
+Happy Coding! 🎉
