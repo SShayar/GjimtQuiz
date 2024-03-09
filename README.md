@@ -1,34 +1,23 @@
 # GjimtQuiz 🎯
 
-A fun and engaging quiz platform built with React, Redux, and Material-UI. 🚀
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4f9a72d2-e52a-4e8e-b13a-e5e0e6f1a92d/deploy-status)](https://app.netlify.com/sites/gjimtquiz/deploys)
-[![CodeFactor](https://www.codefactor.io/repository/github/krishanmurariji/gjimtquiz/badge)](https://www.codefactor.io/repository/github/krishanmurariji/gjimtquiz)
+A fun and engaging quiz platform built with <p> <a href="#"><img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6.svg?logo=css3&logoColor=white"></a>
+    <a href="#"><img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26.svg?logo=html5&logoColor=white"></a>
+       <a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black"></a>
+    <a href="#"><img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4.svg?logo=php&logoColor=white"></a></p>. 🚀
 
 ## Features 🌟
 
 - Eye-catching animations and transitions
 - Fully responsive design
-- User authentication with Google Sign-In
-- Dynamic quiz creation with multiple question types
-- Real-time leaderboard and score tracking
-- User profiles and score history
+- Slider image slider effect and animation
+- Pop Ups to show result
 
 ## Tech Stack 🛠️
 
-- Frontend: React, Redux, Material-UI
-- Backend: Node.js, Express, MongoDB
-- Authentication: Google Sign-In
-- Deployment: Netlify, Heroku
-
-## Getting Started 🚀
-
-1. Clone the repository: `git clone https://github.com/krishanmurariji/GjimtQuiz.git`
-2. Navigate to the project directory: `cd GjimtQuiz`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open the app in your browser: `http://localhost:3000`
-
+- Frontend: Html, CSS
+- Backend: js, PHP
+- Deployment: Vercel
+- 
 ## Contributing 🤝
 
 We welcome contributions from the community! To contribute, follow these steps:
@@ -39,12 +28,19 @@ We welcome contributions from the community! To contribute, follow these steps:
 4. Push your changes to your forked repository
 5. Create a pull request
 
-## License 📜
 
-GjimtQuiz is open source and is licensed under the MIT License.
 
 ## Contact 📞
-
+<a href="https://linkedin.com/in/krishan-murari/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
+<a href="https://twitter.com/KrishanMuraari" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
+<a href="https://www.instagram.com/krishanmurariji/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
+<a href="https://github.com/krishanmurariji" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
+<a href="https://leetcode.com/Krishanmurariji/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
 For any questions or concerns, please contact the project maintainers at [krishanmurari.gjimt@gmail.com](mailto:krishanmurari.gjimt@gmail.com).
 
 Happy quizzing! 🎉
